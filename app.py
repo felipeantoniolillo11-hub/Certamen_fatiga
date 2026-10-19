@@ -6,7 +6,7 @@ import google.generativeai as genai
 # ==========================================
 # 1. CONFIGURACIÓN DE LA PÁGINA Y DISEÑO
 # ==========================================
-st.set_page_config(page_title="MAXwash - Monitor de Fatiga", page_icon="🚛", layout="centered")
+st.set_page_config(page_title="Monitor de Fatiga", page_icon="🚛", layout="centered")
 
 # Título atractivo (Req 4.4)
 st.title("🚛 Monitor de Seguridad: Detección de Fatiga")
