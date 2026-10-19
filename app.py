@@ -94,4 +94,4 @@ if archivo_subido is not None:
                     st.success(respuesta.text)
 
             except Exception as e:
-                st.error("Error al conectar con la IA Generativa. Verifica tu clave de API.")
+                st.error(f"¡Pillado! El error real de la máquina es: {e}")
