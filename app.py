@@ -99,7 +99,7 @@ if archivo_subido is not None:
                 genai.configure(api_key=st.secrets["GEMINI_API_KEY"])
                 
                 # Cargamos la versión específica del modelo de lenguaje que recomendó la API.
-                modelo_llm = genai.GenerativeModel('models/gemini-3.8-flash')
+                modelo_llm = genai.GenerativeModel('gemini-1.5-flash-8b')
                 
                 # =========================================================================================
                 # 5.1 INGENIERÍA DE PROMPTS (Las instrucciones para la IA)
