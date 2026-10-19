@@ -69,8 +69,7 @@ if archivo_subido is not None:
             try:
                 # Conectamos con la llave secreta de Gemini que pondremos en GitHub
                 genai.configure(api_key=st.secrets["GEMINI_API_KEY"])
-                modelo_llm = genai.GenerativeModel('gemini-pro')
-
+                modelo_llm = genai.GenerativeModel('gemini-1.5-flash')
                 # El Prompt estructurado y responsable
                 prompt = f"""
                 Eres un asesor experto en seguridad industrial y salud ocupacional.
