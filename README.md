@@ -1,4 +1,4 @@
-# 🚛 Monitor de Seguridad MAXwash: Detección de Fatiga
+# 🚛 Monitor de Seguridad : Detección de Fatiga
 
 ## 1. Descripción del Proyecto
 Aplicación web diseñada para la inspección visual en sistemas de autolavado y flotas. Permite detectar si un operario o conductor presenta fatiga (ojos cerrados) o se encuentra alerta (ojos abiertos) con el fin de prevenir accidentes laborales. Al detectar peligro, un asistente de IA Generativa redacta un protocolo de emergencia.
@@ -11,7 +11,7 @@ Aplicación web diseñada para la inspección visual en sistemas de autolavado y
 
 ## 3. Modelo Elegido
 Se seleccionó **YOLO26-cls** (o YOLO11-cls).
-* **Justificación:** Se comparó inicialmente con un modelo Zero-Shot (CLIP de Hugging Face), el cual obtuvo un accuracy cercano al azar. YOLO, mediante *transfer learning*, logró un accuracy de [Pon aquí tu porcentaje]% en pocas épocas, demostrando ser mucho más eficiente, liviano y apto para poner en producción.
+* **Justificación:** Se comparó inicialmente con un modelo Zero-Shot (CLIP de Hugging Face), el cual obtuvo un accuracy cercano al azar. YOLO, mediante *transfer learning*, logró un accuracy de 92.5% en pocas épocas, demostrando ser mucho más eficiente, liviano y apto para poner en producción.
 
 ## 4. Instrucciones de Uso (Local)
 Para correr este proyecto en tu computador:
@@ -25,4 +25,4 @@ Para correr este proyecto en tu computador:
 ## 6. Declaración de uso de IA
 Para el desarrollo de este proyecto se utilizó IA (Gemini/ChatGPT) como apoyo.
 * **Uso:** Se utilizó para estructurar el código base de Streamlit y configurar la lógica del entrenamiento en Colab.
-* **Adaptación:** El código fue adaptado y extendido específicamente a nuestro problema industrial de MAXwash, ajustando el *prompt* de seguridad industrial y los umbrales de decisión según la matriz de confusión generada.
+* **Adaptación:** El código fue adaptado y extendido específicamente al problema propuesto, ajustando el *prompt* de seguridad industrial y los umbrales de decisión según la matriz de confusión generada.
