@@ -6,7 +6,7 @@ Aplicación web diseñada para la inspección visual en sistemas de autolavado y
 ## 2. Datos Utilizados
 * **Origen:** Driver Drowsiness Dataset (DDD) obtenido desde Kaggle.
 * **Clases:** 2 clases (`ojos_abiertos`, `ojos_cerrados`).
-* **Balance y división:** Se usaron 80 imagenes tanto para "ojos_abiertos" como para "ojos_cerrados" en la parte de train, lo que fue la parte de val, se usaron solo 20 imagenes, tambien tanto en "ojos_abiertos" como en "ojos_cerrados".
+* **Balance y división:** Se utilizaron 100 imagenes por clase (200 en total). El conjunto esta balanceado y dividido en 80 imagenes para entrenamiento (Train) y 20 imagenes para validacion (Val) por cada clase.
 * **Limitaciones:** El modelo fue entrenado con recortes claros de ojos. En una cabina real, factores como iluminación deficiente, vibraciones o lentes de sol podrían generar un sesgo en la predicción.
 
 ## 3. Modelo Elegido
