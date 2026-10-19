@@ -69,7 +69,7 @@ if archivo_subido is not None:
             try:
                 # Conectamos con la llave secreta de Gemini que pondremos en GitHub
                 genai.configure(api_key=st.secrets["GEMINI_API_KEY"])
-                modelo_llm = genai.GenerativeModel('gemini-1.5-flash')
+                modelo_llm = genai.GenerativeModel('gemini-pro')
 
                 # El Prompt estructurado y responsable
                 prompt = f"""
